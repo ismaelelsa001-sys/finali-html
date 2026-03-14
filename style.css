@@ -1,0 +1,452 @@
+/* GENERAL */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+h1,
+h2,
+h3,
+h5 {
+    color: #333;
+    font-weight: 700;
+}
+
+/* NAVBAR */
+
+.navbar {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: url("images/restaurant.jpg") center/cover no-repeat;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.welcome-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* HERO (ACCUEIL) */
+
+.hero {
+
+
+    height: 90vh;
+    background-image: url("images/antre.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* IMAGE APRES BIENVENUE */
+
+.welcome-section {
+    padding: 60px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.welcome-img {
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* GRID POUR CARDS */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* SECTION PLATS VEDETTES */
+
+.vedettes {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f8f8;
+}
+
+/* TITRE */
+
+.vedettes h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* CONTAINER DES PLATS */
+
+.plats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* CARD */
+
+.plat-card {
+    width: 220px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* HOVER EFFECT */
+
+.plat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* PHOTO RON */
+
+.plat-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffc107;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* NOM PLAT */
+
+.plat-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* PRIX */
+
+.plat-card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d35400;
+}
+
+/* MENU */
+
+.menu-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-left: 5px solid #ffc107;
+    padding-left: 10px;
+    font-size: 26px;
+}
+
+/* GRID MENU */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* ITEM MENU */
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* IMAGE MENU */
+
+.menu-img {
+    width: 50px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* INFO MENU */
+
+.menu-info {
+    flex: 1;
+}
+
+.menu-info h5 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.menu-info p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+/* PRIX */
+
+.menu-price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffc107;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* FORM */
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea {
+    border-radius: 6px !important;
+}
+
+/* BOUTONS */
+
+.btn-warning {
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px) {
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .welcome-img {
+        width: 90%;
+    }
+
+}
+
+/* HERO APROPOS */
+
+.apropos-hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px;
+
+    background-size: cover;
+    background-position: center;
+
+    animation: slideBg 15s infinite;
+}
+
+/* TEXTE */
+
+.apropos-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+/* ANIMATION IMAGE */
+
+@keyframes slideBg {
+
+    0% {
+        background-image: url("images/chef\ de\ cuisine.jpg");
+    }
+
+    33% {
+        background-image: url("images/place\ pour\ manger.jpg");
+    }
+
+    66% {
+        background-image: url("images/batman\ en\ action.jpg");
+    }
+
+    100% {
+        background-image: url("images/terasse.jpg");
+    }
+
+}
+
+/* PATI NAN APROPOS A */
+
+.chef-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+
+/* IMAGE CHEF */
+
+.chef-image img {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chef-image figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+/* TEXTE */
+
+.chef-text {
+    flex: 1;
+}
+
+.chef-text h2 {
+    margin-bottom: 15px;
+}
+
+.chef-text p {
+    line-height: 1.6;
+    color: #555;
+}
