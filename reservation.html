@@ -67,39 +67,56 @@
 
     </nav>
 
+<main class="container my-5">
 
-    <main class="container my-5">
+<h1 class="text-center mb-4">Réserver une table</h1>
 
-        <h1>Réserver une table</h1>
+<form class="row g-3">
 
-        <form>
+<div class="col-md-6">
+<label for="nom" class="form-label">Nom</label>
+<input type="text" class="form-control" id="nom" required>
+</div>
 
-            <div class="mb-3">
-                <label>Nom</label>
-                <input type="text" class="form-control">
-            </div>
+<div class="col-md-6">
+<label for="email" class="form-label">Email</label>
+<input type="email" class="form-control" id="email" required>
+</div>
 
-            <div class="mb-3">
-                <label>Email</label>
-                <input type="email" class="form-control">
-            </div>
+<div class="col-md-6">
+<label for="telephone" class="form-label">Téléphone</label>
+<input type="tel" class="form-control" id="telephone" required>
+</div>
 
-            <div class="mb-3">
-                <label>Date</label>
-                <input type="date" class="form-control">
-            </div>
+<div class="col-md-3">
+<label for="date" class="form-label">Date</label>
+<input type="date" class="form-control" id="date" required>
+</div>
 
-            <div class="mb-3">
-                <label>Heure</label>
-                <input type="time" class="form-control">
-            </div>
+<div class="col-md-3">
+<label for="heure" class="form-label">Heure</label>
+<input type="time" class="form-control" id="heure" required>
+</div>
 
-            <button class="btn btn-warning">Réserver</button>
+<div class="col-md-6">
+<label for="personnes" class="form-label">Nombre de personnes</label>
+<input type="number" class="form-control" id="personnes" min="1" max="20" required>
+</div>
 
-        </form>
+<div class="col-12">
+<label for="message" class="form-label">Message spécial</label>
+<textarea class="form-control" id="message" rows="3"></textarea>
+</div>
 
-    </main>
+<div class="col-12 text-center">
+<button type="submit" class="btn btn-primary">Réserver</button>
+</div>
 
+</form>
+
+</main>
+
+   
     <footer>
         <p>© 2026 ELDY restaurant</p>
     </footer>
